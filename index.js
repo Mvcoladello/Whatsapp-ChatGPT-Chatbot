@@ -6,7 +6,7 @@ const client = new Client({
     authStrategy: new LocalAuth()
 });
 
-const openai = new OpenAI("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"); // Substitua "SUA_CHAVE_DE_API_DO_OPENAI" pela sua chave de API do OpenAI
+const openai = new OpenAI("key"); // Substitua "SUA_CHAVE_DE_API_DO_OPENAI" pela sua chave de API do OpenAI
 
 client.on('qr', (qr) => {
     qrcode.generate(qr, { small: true });
